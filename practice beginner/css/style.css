@@ -1,0 +1,284 @@
+body{
+  color: #000;
+  font-family: ヒラギノ明朝 Pro;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+header{
+  background-color: #000;
+  display: flex;
+
+}
+
+.header-logo{
+  width: 193px;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.header-nav{
+  margin-left: auto;
+
+}
+
+.nav{
+  display: flex;
+}
+
+.nav-list{
+  display: flex;
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
+.nav-item{
+  margin-right: 25px;
+  font-size: 22px;
+}
+
+.nav-item a{
+  color: #fff;
+}
+
+.top{
+  background-image: url(/image/top-bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 551px;
+}
+
+.top-title{
+  font-size: 60px;
+  padding-top: 243px;
+  padding-bottom: 248px;
+  text-align: center;
+}
+
+.course{
+  padding-top: 53px;
+}
+
+.cmn-title{
+  font-size: 40px;
+  text-align: center;
+}
+
+.course-cont{
+  padding-top: 40px;
+}
+
+.course-list{
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.course-item{
+  width: 291px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.course-item:nth-child(n+2){
+  margin-left: 20px;
+}
+
+.course-item-text{
+  margin: 20px 11px 10px 11px;
+}
+
+.course-item-text p{
+  font-size: 18px;
+}
+
+.course-item-box{
+  margin-top: 48px;
+  text-align: center;
+  position: relative;
+}
+
+.course-item-box::before{
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 1px;
+  background-color: #707070;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -9px;
+}
+
+.course-item-box p{
+  font-size: 16px;
+}
+
+.course-item-box p:nth-child(2){
+  margin-top: 8px;
+}
+
+.course-button{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.course-button a{
+  box-shadow: 0px 3px 6px #00000029;
+  width: 310px;
+  font-size: 18px;
+  border: 1px solid #EEEEEE;
+  display: inline-block;
+  border-radius: 5px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.teacher{
+  padding-top: 70px;
+  padding-bottom: 83px;
+}
+
+.teacher-cont{
+  padding-right: 120px;
+  padding-left: 120px;
+}
+
+.teacher-list{
+  padding-top: 45px;
+}
+
+.teacher-item{
+  display: flex;
+  align-items: center;
+}
+
+.teacher-item:nth-child(2){
+  margin-top: 57px;
+}
+
+.teacher-item-image{
+  width: 250px;
+}
+
+.teacher-item-text{
+  margin-left: 61px;
+  flex: 1;
+}
+
+.teacher-item-text p{
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.teacher-item-title{
+  font-size: 40px;
+}
+
+.contact{
+  background-image: url(/image/contact-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 62px;
+  padding-bottom: 34px;
+}
+
+.contact-title{
+  font-size: 36px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.contact-text{
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 53px;
+}
+
+.contact-text p{
+  margin-top: 20px;
+  line-height: 2;
+}
+
+.contact-button{
+  text-align: center;
+  margin-top: 32px;
+}
+
+.contact-button a{
+  width: 210px;
+  font-size: 16px;
+  box-shadow: 0px 3px 6px #00000029;
+  display: inline-block;
+  border-radius: 5px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  background-color: #DC143C;
+  color: #FFFFFF;
+  font-family: Helvetica Neue;
+}
+
+.footer{
+  background-color: #000000;
+  padding-top: 32px;
+  padding-bottom: 31px;
+}
+
+.footer p{
+  color: #FFFFFF;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media only screen and (max-width:767px){
+  .header-nav{
+    display: none;
+  }
+  .top-title{
+    font-size: 26px;
+  }
+  .course-list{
+    display: block;
+  }
+  .course-item{
+    width: 100%;
+  }
+  .course-item:nth-child(n+2){
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .course-item-text{
+    padding-bottom: 31px;
+  }
+  .teacher-cont{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .teacher-item{
+    display: block;
+  }
+  .teacher-item-image{
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+  }
+  .teacher-item-text{
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-top: 30px;
+  }
+  .teacher-item-title{
+    font-size: 24px;
+    text-align: center;
+  }
+}
